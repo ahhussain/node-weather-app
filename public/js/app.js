@@ -14,7 +14,7 @@ form.addEventListener('submit', (e)=>{
             if(data.error){
                 responsepara.innerHTML = data.error
             }else{
-                responsepara.innerHTML= '<h2>'+data.location+'</h2><br><p> Temprature :'+data.Forecast.temprature+'</p><br>'+data.Forecast.summary
+                responsepara.innerHTML= '<h2>'+data.location+'</h2><br><p> Temprature :'+data.Forecast.temprature+'</p><br>'+data.Forecast.summary +'<p>HighTemp = '+ data.Forecast.hightemp+'</p>'
                 
             }
 
